@@ -1,0 +1,51 @@
+@charset "UFT-8";
+body{
+  font-size: 20px;
+  width: fit-content;
+ margin: auto;
+ background-color: rgb(249, 231, 234);
+  
+}
+
+
+.sample1{
+  color: black;
+}
+.sample2{
+  background-color: rgb(255, 192, 242);
+}
+
+.sample3{
+  text-align: center;
+  padding-top: 30px;
+}
+
+.b{
+  background-color: palevioletred;
+}
+
+.radius{
+  border-top-left-radius:  5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.invisibility{
+  visibility: hidden;
+}
+
+
+.visibile{
+  visibility: visible;
+}
+
+.input-invalid{
+  border: 1px solid red ;
+}
+
+.form-invalid{
+  color: red;
+  font-size: 12px;
+  padding-left: 12px;
+}
