@@ -20,6 +20,10 @@ body{
   padding-top: 30px;
 }
 
+.sample4{
+  font-size: 8;
+}
+
 .b{
   background-color: palevioletred;
 }
@@ -48,4 +52,23 @@ body{
   color: red;
   font-size: 12px;
   padding-left: 12px;
+}
+
+.errMsgArea{
+  color: red;
+  font-size: 8px;
+}
+
+  .sample1-sample2{
+    padding: 0.2em 0.5em;
+    margin: 2em 0;
+    color: black;
+    border: dashed 2px palevioletred;
+    border-radius: 8px;
+    line-height: 2.0 ;
+  }
+
+.sample1-sample2 p {
+  margin: 0; 
+  padding: 0;
 }

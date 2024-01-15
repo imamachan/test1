@@ -10,10 +10,10 @@
 <body>
 	
 	<header class="sample3">
-		<a>～利用者情報～</a>
+		<a>利用者情報</a>
 	</header>
 
-	<div id="errMsg">
+	<div id="errMsg" class="errMsgArea">
 	</div>
 	
 	<form class="style" id="form">
@@ -34,8 +34,8 @@
 				</span>
 			</td>
 			<td>
-				<div id="err-msg-name"></div><br>
-				<input type="name" id="lastName" name="input-lastname" placeholder="姓" required/><input type="name" id="firstName" name="first-name" placeholder="名" required/>
+				<input type="name" id="lastName" name="input-lastname" placeholder="姓" required/><input type="name" id="firstName" name="first-name" placeholder="名" required/><br>
+				<div id="err-msg-name" class="errMsgArea"></div>
 			</td>
 		  </tr>
 		  <tr>
@@ -45,7 +45,6 @@
 				</span>
 			</td>
 			<td>
-				<div id="err-msg-gender"></div><br>
 				<label for="woman">女</label>
 				<input type="radio" id="radio-1" name="gender"
 				value="woman" required/>
@@ -63,7 +62,7 @@
 		  </tr>
 		  <tr>
 			<td>
-				<span class="sample1-sample2">
+				<span  class="sample4">
 					都道府県
 				</span>
 			</td>
@@ -122,24 +121,24 @@
 		  </tr>
 		  <tr>
 			<td>
-				<span class="sample1-sample2">
+				<span class="sample4">
 					住所１
 				</span>
 			</td>
 			<td>
-				<div id="err-msg-adress1"></div><br>
-				<input type="adress" placeholder="市町村、番地" id="adress1" required/>
+				<input type="adress" placeholder="市町村、番地" id="adress1" required/><br>
+				<div id="err-msg-adress1" class="errMsgArea"></div>
 			</td>
 		  </tr>
 		  <tr>
 			<td>
-				<span class="sample1-sample2">
+				<span class="sample4">
 					住所２
 				</span>
 			</td>
 			<td>
-				<div id="err-msg-adress2"></div><br>
-				<input type="adress" placeholder="マンション名、部屋番号" id="adress2" required/>
+				<input type="adress" placeholder="マンション名、部屋番号" id="adress2" required/><br>
+				<div id="err-msg-adress2" class="errMsgArea"></div>
 			</td>
 		  </tr>
 		  <tr>
