@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<script src="js/confirm.js"></script>
+	<link href="css/input.css" rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>確認画面</title>
+</head>
+<body>
+	
+	<header class="sample3">
+		<a>利用者情報確認</a>
+	</header>
+
+	<div id="errMsg">
+	</div>
+	
+	<form class="style" id="form">
+		<table>
+			<!-- <tr>
+				<td>
+					<select class = test>
+						<option value="あ">あ</option>
+						<option value="い">い</option>
+						
+					</select>
+				</td>
+			</tr> -->
+		    <tr>
+			<td valign="bottom">
+				<span class="sample1-sample2">
+					氏名
+				</span>
+			</td>
+			<td>
+				<input type="name" id="lastName2" name="input-lastname" placeholder="姓" required/><input type="name" id="firstName2" name="first-name" placeholder="名" required/><br>
+				<div id="err-msg-name"></div>
+			</td>
+		  </tr>
+		  <tr>
+			<td>
+				<span class="sample1-sample2">
+					性別
+				</span>
+			</td>
+			<td>
+				<div id="err-msg-gender"></div><br>
+				<label for="woman">女</label>
+				<input type="radio" id="radio-1" name="gender2"
+				value="woman" required/>
+				<label for="woman">男</label>
+				<input type="radio" id="radio-2" name="gender2"
+				value="man">
+			</td>
+		  </tr>
+		  <tr>
+			<td>
+				<span class="sample1-sample2">
+					住所
+				</span>
+			</td>
+		  </tr>
+		  <tr>
+			<td>
+				<span class="sample1-sample2">
+					都道府県
+				</span>
+			</td>
+			<td>
+				<select name="pref2" id="pref2">
+					<!-- <option value="" selected></option> -->
+					<!-- <option value="北海道">北海道</option>
+					<option value="青森県">青森県</option>
+					<option value="岩手県">岩手県</option>
+					<option value="宮城県">宮城県</option>
+					<option value="秋田県">秋田県</option>
+					<option value="山形県">山形県</option>
+					<option value="福島県">福島県</option>
+					<option value="茨城県">茨城県</option>
+					<option value="栃木県">栃木県</option>
+					<option value="群馬県">群馬県</option>
+					<option value="埼玉県">埼玉県</option>
+					<option value="千葉県">千葉県</option>
+					<option value="東京都">東京都</option>
+					<option value="神奈川県">神奈川県</option>
+					<option value="新潟県">新潟県</option>
+					<option value="富山県">富山県</option>
+					<option value="石川県">石川県</option>
+					<option value="福井県">福井県</option>
+					<option value="山梨県">山梨県</option>
+					<option value="長野県">長野県</option>
+					<option value="岐阜県">岐阜県</option>
+					<option value="静岡県">静岡県</option>
+					<option value="愛知県">愛知県</option>
+					<option value="三重県">三重県</option>
+					<option value="滋賀県">滋賀県</option>
+					<option value="京都府">京都府</option>
+					<option value="大阪府">大阪府</option>
+					<option value="兵庫県">兵庫県</option>
+					<option value="奈良県">奈良県</option>
+					<option value="和歌山県">和歌山県</option>
+					<option value="鳥取県">鳥取県</option>
+					<option value="島根県">島根県</option>
+					<option value="岡山県">岡山県</option>
+					<option value="広島県">広島県</option>
+					<option value="山口県">山口県</option>
+					<option value="徳島県">徳島県</option>
+					<option value="香川県">香川県</option>
+					<option value="愛媛県">愛媛県</option>
+					<option value="高知県">高知県</option>
+					<option value="福岡県">福岡県</option>
+					<option value="佐賀県">佐賀県</option>
+					<option value="長崎県">長崎県</option>
+					<option value="熊本県">熊本県</option>
+					<option value="大分県">大分県</option>
+					<option value="宮崎県">宮崎県</option>
+					<option value="鹿児島県">鹿児島県</option>
+					<option value="沖縄県">沖縄県</option> -->
+				  </select>
+			</td>
+		  </tr>
+		  <tr>
+			<td>
+				<span class="sample1-sample2">
+					住所１
+				</span>
+			</td>
+			<td>
+				<input type="adress" placeholder="市町村、番地" id="adress1-2" required/><br>
+				<div id="err-msg-adress1"></div>
+			</td>
+		  </tr>
+		  <tr>
+			<td>
+				<span class="sample1-sample2">
+					住所２
+				</span>
+			</td>
+			<td>
+				<input type="adress" placeholder="マンション名、部屋番号" id="adress2-2" required/><br>
+				<div id="err-msg-adress2"></div>
+			</td>
+		  </tr>
+		  <tr>
+			<td valign="top">
+				<span class="sample1-sample2">
+					アレルギー
+				</span>
+			</td>
+			<td>
+				<input type="radio" id="allergie1" name="btn" value="yes" required ><span>有</span>
+				<input type="radio" id="allergie2" name="btn" value="no" ><span>無</span><br>
+				<!-- <input type="radio" id="allergie1" name="btn" onclick="buttonClick(true)"><span>有</span>
+				<input type="radio" id="allergie2" name="btn" onclick="buttonClick(false)"><span>無</span><br> -->
+				
+  				<span id="detail" class="invisibility">詳細を入力してください</span><br>
+  				<input type="text"  id="txt-area2" class="invisibility" placeholder="食品名">
+			</td>
+		  </tr>
+		  <tr>
+			<td valign="top">
+				<span class="sample1-sample2">
+					備考欄
+				</span>
+			</td>
+			<td>
+				<textarea id="txt-area2-2" class="radius" rows="10" cols="60" placeholder="備考欄"></textarea>
+			</td>
+		  </tr>
+		  <tr>
+	</table>
+</form>
+<input type="submit" id="btnsubmit" value="登録する" class="b" onclick="alert('送信していいのか？');" >
+<input type="submit" id="btnsubmit2" value="戻る" class="b"  >
+
+<footer>
+	<p>by amane</p>
+</footer>
+
+</body>
+</html>

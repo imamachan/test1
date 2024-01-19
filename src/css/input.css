@@ -1,0 +1,74 @@
+@charset "UFT-8";
+body{
+  font-size: 20px;
+  width: fit-content;
+ margin: auto;
+ background-color: rgb(249, 231, 234);
+  
+}
+
+
+.sample1{
+  color: black;
+}
+.sample2{
+  background-color: rgb(255, 192, 242);
+}
+
+.sample3{
+  text-align: center;
+  padding-top: 30px;
+}
+
+.sample4{
+  font-size: 8;
+}
+
+.b{
+  background-color: palevioletred;
+}
+
+.radius{
+  border-top-left-radius:  5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.invisibility{
+  visibility: hidden;
+}
+
+
+.visibile{
+  visibility: visible;
+}
+
+.input-invalid{
+  border: 1px solid red ;
+}
+
+.form-invalid{
+  color: red;
+  font-size: 12px;
+  padding-left: 12px;
+}
+
+.errMsgArea{
+  color: red;
+  font-size: 8px;
+}
+
+  .sample1-sample2{
+    padding: 0.2em 0.5em;
+    margin: 2em 0;
+    color: black;
+    border: dashed 2px palevioletred;
+    border-radius: 8px;
+    line-height: 2.0 ;
+  }
+
+.sample1-sample2 p {
+  margin: 0; 
+  padding: 0;
+}
