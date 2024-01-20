@@ -417,7 +417,7 @@ sessionStorage.setItem("value8",adress);
 
 
 
-  location.href="index2.html";
+  location.href="confirm.html";
 //   window.open("index2.html");
   
 }

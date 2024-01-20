@@ -16,11 +16,11 @@ document.getElementById("btnsubmit").addEventListener("click",function(){
 
 function btnSubmit2(){
     console.log("yaho");
-    location.href="index.html";
+    location.href="input.html";
 }
 
 function btnSubmit3(){
-    location.href="index3.html"
+    location.href="complete.html"
 }
 
 
