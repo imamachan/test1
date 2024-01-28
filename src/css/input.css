@@ -1,74 +1,89 @@
 @charset "UFT-8";
-body{
+body {
   font-size: 20px;
   width: fit-content;
- margin: auto;
- background-color: rgb(249, 231, 234);
-  
+  margin: auto;
+  background-color: rgb(249, 231, 234);
 }
 
-
-.sample1{
-  color: black;
-}
-.sample2{
-  background-color: rgb(255, 192, 242);
-}
-
-.sample3{
+.heading {
   text-align: center;
   padding-top: 30px;
 }
 
-.sample4{
-  font-size: 8;
+.element {
+  font-size: 15px;
 }
 
-.b{
+.btn {
   background-color: palevioletred;
 }
 
-.radius{
-  border-top-left-radius:  5px;
+.submit {
+  text-align: right;
+}
+.radius {
+  border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
 
-.invisibility{
+.invisibility {
   visibility: hidden;
 }
 
-
-.visibile{
+.visibile {
   visibility: visible;
 }
 
-.input-invalid{
-  border: 1px solid red ;
+.input-invalid {
+  border: 1px solid red;
 }
 
-.form-invalid{
+.form-invalid {
   color: red;
   font-size: 12px;
   padding-left: 12px;
 }
 
-.errMsgArea{
+.errMsgArea {
   color: red;
   font-size: 8px;
 }
 
-  .sample1-sample2{
-    padding: 0.2em 0.5em;
-    margin: 2em 0;
-    color: black;
-    border: dashed 2px palevioletred;
-    border-radius: 8px;
-    line-height: 2.0 ;
-  }
+.subheading {
+  color: black;
+  line-height: 2;
+}
 
-.sample1-sample2 p {
-  margin: 0; 
-  padding: 0;
+.subheading p {
+  margin-bottom: 2em;
+}
+
+.inputBox {
+  height: 30px;
+  box-sizing: border-box;
+}
+
+.select {
+  height: 30px;
+  box-sizing: border-box;
+}
+
+.required::after {
+  content: "必須";
+  background-color: palevioletred;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  min-width: 10px;
+  padding: 3px 7px;
+  margin: 0px 5px;
+  line-height: 1;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-align: center;
+  border-radius: 10px;
+  display: inline-block;
 }
