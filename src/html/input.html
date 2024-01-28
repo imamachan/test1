@@ -1,122 +1,174 @@
 <!DOCTYPE html>
 <html lang="ja">
+  <head>
+    <script src="file:///C:/Users/panpa/amachan/src/js/input.js"></script>
+    <link
+      href="file:///C:/Users/panpa/amachan/src/css/input.css"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>予約フォーム</title>
+  </head>
 
-<head>
-	<script src="file:///C:/Users/panpa/amachan/src/js/input.js"></script>
-	<link href="file:///C:/Users/panpa/amachan/src/css/input.css" rel="stylesheet">
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>予約フォーム</title>
-</head>
+  <body>
+    <header class="heading">
+      <a>利用者情報</a>
+    </header>
 
-<body>
+    <div id="errMsg" class="errMsgArea"></div>
 
-	<header class="sample3">
-		<a>利用者情報</a>
-	</header>
+    <form class="style" id="form">
+      <table>
+        <tr>
+          <td valign="bottom">
+            <span class="subheading required">
+              氏名
+            </span>
+          </td>
+          <td>
+            <input
+              type="name"
+              id="lastName"
+              name="input-lastname"
+              placeholder="姓"
+              class="inputBox"
+              required
+            /><input
+              type="name"
+              id="firstName"
+              name="first-name"
+              placeholder="名"
+              class="inputBox"
+              required
+            /><br />
+            <div id="err-msg-name" class="errMsgArea"></div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="subheading required">
+              性別
+            </span>
+          </td>
+          <td>
+            <label for="woman">女</label>
+            <input
+              type="radio"
+              id="radio-1"
+              name="gender2"
+              value="woman"
+              required
+            />
+            <label for="woman">男</label>
+            <input type="radio" id="radio-2" name="gender2" value="man" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="subheading required">
+              住所
+            </span>
+          </td>
+        </tr>
+        <tr>
+        <td>
+          <span class="element">
+            都道府県
+          </span>
+        </td>
+        <td>
+          <select name="pref2" id="pref2" class="select"> </select>
+        </td>
+        </tr>
+        <tr>
+        <td>
+          <span class="element">
+            住所１
+          </span>
+          </td>
+        </td>
 
-	<div id="errMsg" class="errMsgArea">
+        <td>
+          <input
+            type="adress"
+            placeholder="市町村、番地"
+            id="adress1"
+            class="inputBox"
+            required
+          /><br />
+          <div id="err-msg-adress1" class="errMsgArea"></div>
+        </td>
+        </tr>
+        <tr>
+        <td>
+          <span class="element">
+            住所２
+          </span>
+        </td>
+        <td>
+          <input
+            type="adress"
+            placeholder="マンション名、部屋番号"
+            id="adress2"
+            class="inputBox"
+            required
+          /><br />
+          <div id="err-msg-adress2" class="errMsgArea"></div>
+        </td>
+        </tr>
+        <tr>
+          <td valign="top">
+            <span class="subheading required">
+              アレルギー
+            </span>
+          </td>
+          <td>
+            <input
+              type="radio"
+              id="allergie1"
+              name="btn"
+              value="yes"
+              required
+            /><span>有</span>
+            <input type="radio" id="allergie2" name="btn" value="no" /><span
+              >無</span
+            ><br />
+
+            <span id="detail" class="invisibility element" >詳細を入力してください</span
+            ><br />
+            <input
+              type="text"
+              id="txt-area"
+              class="invisibility inputBox"
+              placeholder="食品名"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">
+            <span class="subheading">
+              備考欄
+            </span>
+          </td>
+          <td>
+            <textarea
+              id="txtArea"
+              class="radius"
+              rows="10"
+              cols="60"
+              placeholder="備考欄"
+            ></textarea>
+          </td>
+        </tr>
+        <tr></tr>
+      </table>
+    </form>
+	<div class="submit">
+    <input type="submit" id="btnsubmit" value="送信する" class="btn" disabled />
 	</div>
-
-	<form class="style" id="form">
-		<table>
-			<tr>
-				<td valign="bottom">
-					<span class="sample1-sample2">
-						氏名
-					</span>
-				</td>
-				<td>
-					<input type="name" id="lastName" name="input-lastname" placeholder="姓" required /><input type="name"
-						id="firstName" name="first-name" placeholder="名" required /><br>
-					<div id="err-msg-name" class="errMsgArea"></div>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<span class="sample1-sample2">
-						性別
-					</span>
-				</td>
-				<td>
-					<label for="woman">女</label>
-					<input type="radio" id="radio-1" name="gender" value="woman" required />
-					<label for="woman">男</label>
-					<input type="radio" id="radio-2" name="gender" value="man">
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<span class="sample1-sample2">
-						住所
-					</span>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<span class="sample4">
-						都道府県
-					</span>
-				</td>
-				<td>
-					<select name="pref2" id="pref2">
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<span class="sample4">
-						住所１
-					</span>
-				</td>
-				<td>
-					<input type="adress" placeholder="市町村、番地" id="adress1" required /><br>
-					<div id="err-msg-adress1" class="errMsgArea"></div>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<span class="sample4">
-						住所２
-					</span>
-				</td>
-				<td>
-					<input type="adress" placeholder="マンション名、部屋番号" id="adress2" required /><br>
-					<div id="err-msg-adress2" class="errMsgArea"></div>
-				</td>
-			</tr>
-			<tr>
-				<td valign="top">
-					<span class="sample1-sample2">
-						アレルギー
-					</span>
-				</td>
-				<td>
-					<input type="radio" id="allergie1" name="btn" value="yes" required><span>有</span>
-					<input type="radio" id="allergie2" name="btn" value="no"><span>無</span><br>
-
-					<span id="detail" class="invisibility">詳細を入力してください</span><br>
-					<input type="text" id="txt-area" class="invisibility" placeholder="食品名">
-				</td>
-			</tr>
-			<tr>
-				<td valign="top">
-					<span class="sample1-sample2">
-						備考欄
-					</span>
-				</td>
-				<td>
-					<textarea id="txtArea" class="radius" rows="10" cols="60" placeholder="備考欄"></textarea>
-				</td>
-			</tr>
-			<tr>
-		</table>
-	</form>
-	<input type="submit" id="btnsubmit" value="送信する" class="b" onclick="alert('送信していいのか？');" disabled>
-	<footer>
-		<p>by amane</p>
-	</footer>
-
-</body>
-
+    <footer>
+      <p>by amane</p>
+    </footer>
+  </body>
 </html>
