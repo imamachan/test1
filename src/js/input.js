@@ -318,7 +318,7 @@ function pageChange() {
   const adress = elements2.value;
   sessionStorage.setItem("value8", adress);
 
-  location.href = "confirm.html";
+  location.href = "../html/confirm.html";
 }
 
 function indication() {

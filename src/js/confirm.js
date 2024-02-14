@@ -11,11 +11,11 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function btnSubmit2() {
-  location.href = "input.html";
+  location.href = "../html/input.html";
 }
 
 function btnSubmit3() {
-  location.href = "complete.html";
+  location.href = "../html/complete.html";
 }
 
 function indication() {
