@@ -1,0 +1,89 @@
+@charset "UFT-8";
+body {
+  font-size: 20px;
+  width: fit-content;
+  margin: auto;
+  background-color: rgb(249, 231, 234);
+}
+
+.heading {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.element {
+  font-size: 15px;
+}
+
+.btn {
+  background-color: palevioletred;
+}
+
+.submit {
+  text-align: right;
+}
+.radius {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.invisibility {
+  visibility: hidden;
+}
+
+.visibile {
+  visibility: visible;
+}
+
+.input-invalid {
+  border: 1px solid red;
+}
+
+.form-invalid {
+  color: red;
+  font-size: 12px;
+  padding-left: 12px;
+}
+
+.errMsgArea {
+  color: red;
+  font-size: 8px;
+}
+
+.subheading {
+  color: black;
+  line-height: 2;
+}
+
+.subheading p {
+  margin-bottom: 2em;
+}
+
+.inputBox {
+  height: 30px;
+  box-sizing: border-box;
+}
+
+.select {
+  height: 30px;
+  box-sizing: border-box;
+}
+
+.required::after {
+  content: "必須";
+  background-color: palevioletred;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  min-width: 10px;
+  padding: 3px 7px;
+  margin: 0px 5px;
+  line-height: 1;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-align: center;
+  border-radius: 10px;
+  display: inline-block;
+}
